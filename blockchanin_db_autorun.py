@@ -7,7 +7,7 @@ def clear_terminal():
 
 def run_syncnode():
     # Function to execute the syncnode.py script with the specific argument
-    os.system('python3 /home/admin/node/xenminer/syncnode.py 0x60a66f137D8d90Db37CB0078E5624C57911d2804')
+    os.system('python3 syncnode.py 0x60a66f137D8d90Db37CB0078E5624C57911d2804')
 
 def countdown_timer(minutes, seconds):
     # Function for the countdown timer
@@ -20,7 +20,7 @@ def countdown_timer(minutes, seconds):
         total_seconds -= 1
 
 # Main function
-if name == "main":
+if __name__ == "__main__":
     try:
         while True:
             clear_terminal()
